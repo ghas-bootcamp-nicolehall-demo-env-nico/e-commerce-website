@@ -1,5 +1,5 @@
-import { Request, Response, NextFunction } from 'express'
-import models from '../models'
+import { type Request, type Response, type NextFunction } from 'express'
+import * as models from '../models/index'
 
 module.exports = function searchProducts () {
   return (req: Request, res: Response, next: NextFunction) => {
